@@ -8,4 +8,5 @@ dependencies = [
     "fastmcp==1.0",
     "gradio>=5.38.2",
     "manim>=0.19.0",
+    "streamlit>=1.47.1",
 ]

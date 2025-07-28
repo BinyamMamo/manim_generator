@@ -14,3 +14,4 @@ media/*
 CircleToSquare.mp4
 LongDivision.mp4
 .gitignore
+chat_history.db.db
