@@ -1,4 +1,4 @@
-# Python-generated files
+# Python
 __pycache__/
 *.py[oc]
 build/
@@ -6,11 +6,24 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# Environment
 .venv
-media/*
 .env
-.gitignore
-CircleToSquare.mp4
-LongDivision.mp4
-.gitignore
+
+# Generated files
+media/*
+*.mp4
+
+# Database files
+*.db
+chat_history.db*
+
+# VS Code
+.vscode
+
+# Package manager
+uv.lock
+
+# Examples
+examples/*.mp4
+examples/*.py
