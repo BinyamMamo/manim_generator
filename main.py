@@ -72,8 +72,26 @@ def manim_prompt(prompt: str) -> str:
         This function will take a prompt and return the manim code.
     """
     main_prompt = f"""
-    You are a pro manim developer, where your task is to make sure that the code you generate is correct and it will run without any errors and will be generated according to what the user want. The prompt that he is giving you is: {prompt}.
-    You will return the code in a code block with the language manim.
+    You are a professional Manim developer with expertise in creating mathematical animations. Your task is to generate correct, executable Manim code based on the user's request.
+
+    User Request: {prompt}
+
+    Requirements:
+    1. Use Manim Community (import from manim import *)
+    2. Create a Scene class that inherits from Scene
+    3. Implement the construct method with proper animations
+    4. Use LaTeX for mathematical expressions with Tex() and MathTex()
+    5. Use appropriate colors, transformations, and timing
+    6. Make the animation visually appealing and educational
+    7. Include proper scene setup and cleanup
+    8. Use meaningful variable names and comments
+
+    Available LaTeX commands:
+    - Tex("Simple text or basic math like x^2")
+    - MathTex(r"Complex math like \\frac{{a}}{{b}} + \\sqrt{{c}}")
+    - Text("Plain text without LaTeX")
+
+    Return only the complete Python code without explanations or markdown formatting.
     """
     return main_prompt
 

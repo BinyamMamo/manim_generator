@@ -8,4 +8,9 @@ wheels/
 
 # Virtual environments
 .venv
-media/
+media/*
+.env
+.gitignore
+CircleToSquare.mp4
+LongDivision.mp4
+.gitignore
